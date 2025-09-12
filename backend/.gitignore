@@ -35,3 +35,4 @@ dump/
 
 # Nodemon
 nodemon.json
+pnpm-lock.yaml
