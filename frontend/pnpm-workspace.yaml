@@ -1,0 +1,4 @@
+ignoredBuiltDependencies:
+  - '@clerk/shared'
+  - '@sentry/cli'
+  - sharp
