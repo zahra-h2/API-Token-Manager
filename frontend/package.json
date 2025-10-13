@@ -1,10 +1,11 @@
 {
-  "name": "next-shadcn-dashboard-starter",
+  "name": "keyshare-frontend",
   "version": "1.0.0",
   "private": true,
+  "description": "Secure, developer-friendly secret sharing with short-lived, one-time codes",
   "author": {
-    "name": "Kiran",
-    "url": "https://github.com/Kiranism"
+    "name": "Keyshare Team",
+    "url": "https://github.com/FuadTesfaye/keyshare-package"
   },
   "scripts": {
     "dev": "next dev --turbopack",
