@@ -2,6 +2,7 @@ import AppHero from '@/components/mvpblocks/app-hero';
 import AboutUs1 from '@/components/mvpblocks/about-us-1';
 import Faq2 from '@/components/mvpblocks/faq-2';
 import Navbar from '@/components/navbar';
+import Footer from '@/components/footer';
 
 export default function Page() {
   return (
@@ -18,6 +19,7 @@ export default function Page() {
           <Faq2 />
         </section>
       </main>
+      <Footer />
     </>
   );
 }

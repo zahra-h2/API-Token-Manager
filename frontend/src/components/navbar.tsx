@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="text-xl font-bold text-white">
-            API Token Manager
+            🔐 Keyshare
           </div>
           
           {/* Desktop Menu */}
@@ -41,6 +41,9 @@ export default function Navbar() {
             >
               FAQ
             </button>
+            <Link href="/docs" className="text-white hover:text-purple-400 transition-colors">
+              Docs
+            </Link>
             <Link href="/auth/sign-in">
               <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
                 Get Started
@@ -79,6 +82,9 @@ export default function Navbar() {
               >
                 FAQ
               </button>
+              <Link href="/docs" className="block w-full text-left px-3 py-2 text-white hover:text-purple-400">
+                Docs
+              </Link>
               <Link href="/auth/sign-in">
                 <Button size="sm" className="ml-3 mt-2 bg-purple-600 hover:bg-purple-700">
                   Get Started

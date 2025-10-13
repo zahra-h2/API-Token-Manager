@@ -40,40 +40,40 @@ const iconComponents = {
 
 const defaultValues: AboutUsProps['values'] = [
   {
-    title: 'Security',
+    title: 'Security First',
     description:
-      'We implement military-grade encryption and follow industry best practices to keep your API tokens completely secure.',
+      'AES-256-GCM encryption, HMAC-SHA256 code hashing, and secrets never stored in plaintext. Your data is protected by military-grade security.',
     icon: 'Lightbulb',
   },
   {
-    title: 'Collaboration',
+    title: 'Developer Friendly',
     description:
-      'Enable seamless team collaboration with secure token sharing and granular permission controls.',
+      'Simple CLI with beautiful output, clipboard support, and optional QR codes. Share secrets in seconds, not minutes.',
     icon: 'Users',
   },
   {
-    title: 'Simplicity',
+    title: 'Short-Lived & One-Time',
     description:
-      'Complex security made simple. Manage all your API tokens from one intuitive, easy-to-use dashboard.',
+      'Codes expire after 10 minutes (configurable) and can only be used once. Automatic cleanup ensures no lingering secrets.',
     icon: 'Sparkles',
   },
   {
-    title: 'Reliability',
+    title: 'Rate Limited',
     description:
-      'Built for enterprise-scale reliability with 99.9% uptime and robust backup systems for your peace of mind.',
+      'Protection against brute-force attacks with configurable rate limiting, attempt tracking, and comprehensive audit logs.',
     icon: 'Globe',
   },
 ];
 
 export default function AboutUs1() {
   const aboutData = {
-    title: 'About Us',
+    title: 'About Keyshare',
     subtitle:
-      'Securing your API credentials with enterprise-grade encryption and seamless management.',
+      'A secure, developer-friendly platform for sharing secrets with colleagues using short-lived, one-time codes.',
     mission:
-      'Our mission is to provide developers and teams with the most secure and user-friendly platform for managing API tokens, ensuring your credentials are always protected and easily accessible.',
+      'Our mission is to eliminate insecure secret sharing via Slack, email, or unencrypted channels. We provide developers with a simple, secure way to share API keys, tokens, and passwords that expires automatically and can only be used once.',
     vision:
-      'We envision a world where API security is never an afterthought, where developers can focus on building amazing products without worrying about credential management.',
+      'We envision a world where sharing secrets is as easy as sharing a link, but infinitely more secure. Where developers never have to choose between convenience and security.',
     values: defaultValues,
     className: 'relative overflow-hidden py-20',
   };
