@@ -219,7 +219,7 @@ export default function AppHero() {
           <div className="flex items-center gap-2">
             <Zap className="h-4 w-4 text-purple-400" />
             <span className="text-xs font-medium text-purple-200">
-              High Performance
+              Encrypted Storage
             </span>
           </div>
         </motion.div>
@@ -233,7 +233,7 @@ export default function AppHero() {
           <div className="flex items-center gap-2">
             <Database className="h-4 w-4 text-blue-400" />
             <span className="text-xs font-medium text-blue-200">
-              Decentralized Storage
+              Short-Lived Codes
             </span>
           </div>
         </motion.div>
@@ -247,7 +247,7 @@ export default function AppHero() {
           <div className="flex items-center gap-2">
             <Sparkles className="h-4 w-4 text-indigo-400" />
             <span className="text-xs font-medium text-indigo-200">
-              AI-Powered
+              One-Time Use
             </span>
           </div>
         </motion.div>
@@ -269,16 +269,16 @@ export default function AppHero() {
               <span className="mr-2 rounded-full bg-purple-500 px-2 py-0.5 text-xs font-semibold text-white">
                 New
               </span>
-              Introducing Nexus Platform
+              Secure Secret Sharing
             </motion.div>
 
             <motion.h1
               variants={itemVariants}
               className="mb-6 bg-gradient-to-r from-white/70 via-white to-slate-500/80 bg-clip-text text-3xl leading-tight text-transparent sm:text-4xl md:text-5xl lg:text-6xl"
             >
-              The Bridge Between <br className="hidden sm:inline" />
+              Share Secrets Securely <br className="hidden sm:inline" />
               <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-                AI and Web3
+                With One-Time Codes
               </span>
             </motion.h1>
 
@@ -291,19 +291,19 @@ export default function AppHero() {
                 <p className="text-2xl font-bold text-white">
                   {stats.users.toLocaleString()}+
                 </p>
-                <p className="text-xs text-gray-400">Active Users</p>
+                <p className="text-xs text-gray-400">Secrets Shared</p>
               </div>
               <div className="rounded-lg border border-blue-500/20 bg-black/40 px-4 py-2 backdrop-blur-sm">
                 <p className="text-2xl font-bold text-white">
                   {stats.transactions.toLocaleString()}+
                 </p>
-                <p className="text-xs text-gray-400">Transactions</p>
+                <p className="text-xs text-gray-400">Secure Transfers</p>
               </div>
               <div className="rounded-lg border border-indigo-500/20 bg-black/40 px-4 py-2 backdrop-blur-sm">
                 <p className="text-2xl font-bold text-white">
                   {stats.networks}+
                 </p>
-                <p className="text-xs text-gray-400">Networks</p>
+                <p className="text-xs text-gray-400">Teams Using</p>
               </div>
             </motion.div>
 
@@ -313,23 +313,23 @@ export default function AppHero() {
               className="mb-8 flex flex-wrap items-center justify-center gap-2 lg:justify-start"
             >
               <span className="text-xs font-medium text-gray-400">
-                Integrates with:
+                Security features:
               </span>
               <div className="flex cursor-pointer items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-2 py-1 text-xs font-medium text-slate-300 backdrop-blur-sm transition-all hover:bg-purple-950">
                 <div className="h-2 w-2 rounded-full bg-blue-400"></div>
-                Ethereum
+                AES-256-GCM
               </div>
               <div className="flex cursor-pointer items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-2 py-1 text-xs font-medium text-slate-300 backdrop-blur-sm transition-all hover:bg-purple-950">
                 <div className="h-2 w-2 rounded-full bg-purple-400"></div>
-                Solana
+                One-Time Use
               </div>
               <div className="flex cursor-pointer items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-2 py-1 text-xs font-medium text-slate-300 backdrop-blur-sm transition-all hover:bg-purple-950">
                 <div className="h-2 w-2 rounded-full bg-green-400"></div>
-                OpenAI
+                Rate Limited
               </div>
               <div className="flex cursor-pointer items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-2 py-1 text-xs font-medium text-slate-300 backdrop-blur-sm transition-all hover:bg-purple-950">
                 <div className="h-2 w-2 rounded-full bg-yellow-400"></div>
-                +5 more
+                Audit Logs
               </div>
             </motion.div>
           </div>
@@ -339,9 +339,7 @@ export default function AppHero() {
               variants={itemVariants}
               className="mb-8 max-w-md px-6 text-center text-lg leading-relaxed text-slate-300/90 lg:text-end"
             >
-              Nexus connects AI tools with Web3 infrastructure, giving
-              developers the power to build beyond limits. One platform. Endless
-              potential.
+              Keyshare lets you securely share API keys, tokens, and passwords with teammates using short-lived, one-time codes. No more insecure Slack messages or emails.
             </motion.p>
             <motion.div
               variants={itemVariants}

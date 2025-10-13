@@ -16,58 +16,58 @@ interface FaqItem {
 const faqItems: FaqItem[] = [
   {
     id: '1',
-    question: 'What is API Token Manager?',
+    question: 'What is Keyshare?',
     answer:
-      'API Token Manager is a secure platform for managing and storing your API tokens and credentials. It provides encrypted storage, easy access, and secure sharing of your sensitive API keys.',
+      'Keyshare is a secure platform for sharing secrets with colleagues using short-lived, one-time codes. It lets you share API keys, tokens, and passwords without using insecure channels like Slack or email.',
     category: 'general',
   },
   {
     id: '2',
-    question: 'Is my data secure?',
+    question: 'How secure is Keyshare?',
     answer:
-      'Yes, all your API tokens and credentials are encrypted using industry-standard encryption methods. We never store your data in plain text and follow best security practices.',
+      'Very secure! Keyshare uses AES-256-GCM encryption for secrets, HMAC-SHA256 for code hashing, and never stores secrets in plaintext. Codes expire after 10 minutes (configurable) and can only be used once. Rate limiting protects against brute-force attacks.',
     category: 'general',
   },
   {
     id: '3',
-    question: 'How do I add my API tokens?',
+    question: 'How do I share a secret?',
     answer:
-      "Simply navigate to your dashboard, click 'Add Token', enter your API key details, and we'll securely encrypt and store them. You can organize tokens by service or project for easy management.",
+      "Run 'keyshare init' in your terminal, paste your secret, and you'll get an 8-character code (e.g., AB12XY9Q). Share this code with your colleague through any channel. The code expires after 10 minutes and can only be used once.",
     category: 'technical',
   },
   {
     id: '4',
-    question: 'Can I share tokens with my team?',
+    question: 'How do I retrieve a shared secret?',
     answer:
-      "Yes, you can securely share API tokens with team members. Set permissions and access levels to control who can view or use specific tokens while maintaining security.",
+      "Run 'keyshare fetch' and enter the code you received. The secret will be written to your .env file automatically. You can also use flags like --no-write to just display it, or --env-file to specify a different file.",
     category: 'technical',
   },
   {
     id: '5',
-    question: 'Can I customize the components?',
+    question: 'Can I revoke a share before it expires?',
     answer:
-      'Absolutely! All components are built with customization in mind. You can modify colors, spacing, typography, and more using Tailwind classes or by editing the component code directly.',
+      "Yes! Run 'keyshare revoke --code AB12XY9Q' to immediately revoke a share. This is useful if you shared a code by mistake or the recipient no longer needs access.",
     category: 'technical',
   },
   {
     id: '6',
-    question: 'Do MVPBlocks components work with dark mode?',
+    question: 'What happens if someone tries to brute-force codes?',
     answer:
-      "Yes, all MVPBlocks components are designed to work seamlessly with both light and dark modes. They automatically adapt to your site's theme settings.",
+      "Keyshare has built-in rate limiting (max 5 attempts per minute by default) and tracks failed attempts. After 5 failed attempts, the share is automatically locked. All attempts are logged with IP addresses and timestamps.",
     category: 'technical',
   },
   {
     id: '7',
-    question: 'How often are new components added?',
+    question: 'Can I use Keyshare in my company?',
     answer:
-      'We regularly add new components to the library. Our goal is to provide a comprehensive set of components for all common UI patterns and website sections.',
+      'Absolutely! Keyshare is open-source and can be self-hosted. Deploy it with Docker Compose, configure your own master encryption key, and use HTTPS/TLS in production. Perfect for teams that need secure secret sharing.',
     category: 'general',
   },
   {
     id: '8',
-    question: 'How can I contribute to MVPBlocks?',
+    question: 'How can I contribute to Keyshare?',
     answer:
-      'We welcome contributions! You can contribute by creating new components, improving existing ones, fixing bugs, or enhancing documentation. Check our GitHub repository for contribution guidelines.',
+      'We welcome contributions! You can contribute by improving the CLI, adding features to the server, fixing bugs, or enhancing documentation. Check our GitHub repository at github.com/FuadTesfaye/keyshare-package for contribution guidelines.',
     category: 'support',
   },
 ];
@@ -118,8 +118,8 @@ export default function Faq2() {
           </h2>
 
           <p className="text-muted-foreground max-w-2xl text-center">
-            Find answers to common questions about API Token Manager and how to
-            securely manage your API credentials.
+            Find answers to common questions about Keyshare and how to
+            securely share secrets with your team.
           </p>
         </div>
 
